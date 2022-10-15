@@ -1,0 +1,20 @@
+$sizes: "micro", "tiny", "small", "medium", "large", "xlarge";
+
+@each $size in $sizes {
+  .mb-#{$size} {
+    margin-bottom: var(--#{$size});
+  }
+
+  .mt-#{$size} {
+    margin-top: var(--#{$size});
+  }
+
+  .mr-#{$size} {
+    margin-right: var(--#{$size});
+  }
+
+  .ml-#{$size} {
+    margin-left: var(--#{$size});
+  }
+}
+
